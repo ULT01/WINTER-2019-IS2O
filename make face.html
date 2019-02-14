@@ -1,0 +1,90 @@
+//Background
+background(46, 190, 209);
+fill(255, 255, 0);
+noStroke();
+ellipse(373, 39, 100, 100);
+
+// Hair 
+fill(0, 0, 0);
+rect(81, 6, 246, 456, 90);
+
+// Face 
+fill(255, 228, 153);
+ellipse(202, 169, 214, 285);
+
+//Facial Features
+fill(255, 255, 255);
+ellipse(160, 108, 47, 31);
+ellipse(240, 108, 47, 31);
+fill(120, 58, 0);
+ellipse(160, 108, 29, 31);
+ellipse(240, 108, 29, 31);
+fill(0, 0, 0);
+ellipse(160, 108, 15, 18);
+ellipse(240, 108, 15, 18);
+
+//Mouth
+noFill();
+stroke(255, 0, 0);
+strokeWeight(5);
+arc(202, 223, 104, 94, 1, 180);
+
+//Nose
+
+strokeWeight(1);
+stroke(0, 0, 0);
+beginShape();
+vertex(192,160);
+bezierVertex(253,175,265,198,177,200);
+bezierVertex(176,178,188,170,192,160);
+endShape();
+
+
+//Neck
+noStroke();
+fill(255, 228, 153);
+quad(163, 290, 231, 290, 259, 339, 140, 339);
+
+//Shirt
+fill(105, 14, 179);
+rect(95, 324, 207, 322, 90);
+
+//Eyebrows
+stroke(0, 0, 0);
+strokeWeight(9);
+line(130, 80, 180, 75);
+line(272, 80, 222, 75);
+
+//Eyelashes
+strokeWeight(1);
+line(146, 95, 136, 89);
+line(150, 93, 143, 87);
+line(154, 93, 151, 86);
+line(158, 93, 161, 87);
+line(162, 93, 170, 86);
+line(169, 95, 177, 90);
+line(225, 95, 220, 87);
+line(230, 95, 228, 86);
+line(236, 95, 235, 86);
+line(241, 94, 244, 86);
+line(247, 95, 254, 88);
+line(255, 97, 264, 90);
+
+//Freckles
+stroke(255, 0, 0);
+strokeWeight(3);
+point(271, 165);
+point(282, 147);
+point(290, 165);
+
+point(110, 165);
+point(121, 147);
+point(129, 165);
+
+//Text
+fill(255, 0, 0);
+var f = createFont("Monotype Corsiva");
+textFont(f, 40);
+text("CODE", 152, 387);
+
+

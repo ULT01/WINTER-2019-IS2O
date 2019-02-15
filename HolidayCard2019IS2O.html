@@ -2,19 +2,24 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>New Year card</title>
+        <title>Spin-off of "Project: Holiday card"</title>
         
         <style>
         
             h1, h2 {
             font-family: "Blackadder ITC";
             
+            
             }
             
             strong {font-family: "Monotype Corsiva";
+            font-size: 17px;
             
             }
             
+            p {margin-left: 12px;
+            
+            }
             h1, p {color: white;
                 
             }
@@ -27,6 +32,22 @@
                 
             }
             
+            .fun {float: left;
+            margin-right: 20px;
+            border: 10px dashed rgb(255, 255, 255);
+            padding: 13px;
+            }
+            
+            .des {position: relative;
+            top: 73px;
+            
+            }
+            
+            #list {
+            position: relative;
+            top: 139px;
+            right: 207px;
+           }
         </style>
     </head>
     <body>
@@ -39,10 +60,11 @@
         
        </em></strong></p>
         
-        <img align= "center"src= "https://www.kasandbox.org/programming-images/avatars/avatar-team.png" alt = "Happy times for everyone in New year" width= "175" height= "120">
+        <img class="fun" align= "center"src= "https://www.kasandbox.org/programming-images/avatars/avatar-team.png" alt = "Happy times for everyone in New year" width= "175" height= "120">
         
-        <strong><em>Good Bye 2018, Hello 2019!</em              ></strong>
+        <strong class= "des"><em>Good Bye 2018, Hello 2019!</em              ></strong>
         
+        <div id= "list">
         <h2>Things to do:</h2>
         <ol type= "i">
         <strong><em>
@@ -51,7 +73,7 @@
             <li>Make resolutions</li>
         </em></strong>    
         </ol>
-        
+       </div> 
         
     </body>
 </html>

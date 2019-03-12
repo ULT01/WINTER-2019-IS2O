@@ -1,0 +1,30 @@
+var drawChip = function(x, y) {
+    var i = 166;
+    var y = 201;
+    fill(209, 128, 23);
+    while (i < 400 && y < 400) {
+        triangle(i - 29, y - 136, i + 10, y -137, i -103, y - 38);
+        i += 80;
+        y += 43;
+    }
+};
+drawChip();
+
+//Doughnouts:
+
+var drawD = function() {
+    fill(255, 0, 106);
+    var w = random(-14, 236);
+    var x = random(129, 363);
+    ellipse(w, x, 100, 100);
+    fill(255, 255, 255);
+    ellipse(w, x, 40, 40);
+};
+
+drawD();
+drawD();
+
+
+
+
+

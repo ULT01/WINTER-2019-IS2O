@@ -1,0 +1,49 @@
+background(186, 145, 20); // wooden table
+ellipse(200, 200, 350, 350); // plate
+ellipse(200, 200, 300, 300); 
+
+//Food
+
+//Chips
+var drawChip = function() {
+    var i = 148;
+    var y = 311;
+    noStroke();
+    fill(209, 128, 23);
+    while (i < 400 && y < 400) {
+        triangle(i - 38, y - 136, i + -4, y -122, i -85, y - 62);
+        i += 80;
+        y += 43;
+    }
+};
+
+drawChip();
+
+//Doughnuts:
+
+var drawD = function(w, x) {
+    fill(255, 0, 106);
+    stroke(181, 134, 23);
+    strokeWeight(5);
+    ellipse(w, x, 90, 90);
+    fill(255, 255, 255);
+    ellipse(w, x, 40, 40);
+};
+
+drawD(214, 171);
+
+//Cake
+noStroke();
+fill(181, 134, 23);
+rect(131, 293, 84, 39);
+fill(255, 255, 255);
+rect(137, 298, 74, 29);
+fill(255, 0, 0);
+ellipse(174, 311, 23, 23);
+
+//French Fries
+fill(255, 213, 0);
+quad(200, 76, 200, 108, 300, 134, 300, 108 );
+quad(124, 154, 120, 92, 145, 67, 153, 132 );
+quad(285, 233, 288, 161, 329, 154, 310, 240 );
+

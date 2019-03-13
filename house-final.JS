@@ -1,30 +1,36 @@
 //background
 var Udraw = function (A) {
+    
     if (A > 300) {
         background(0, 0, 0);
         fill(255, 255, 255);
+        noStroke();
+        ellipse(380, 93, 200, 200);
         
     } else if (A > 150 && A < 300) {
-        background(242, 0, 255);
-        fill(224, 224, 62);
+        background(255, 146, 3);
+        fill(255, 196, 0);
+        noStroke();
+        ellipse(66, 201, 200, 200);
        
     } else { 
          background(23, 161, 161);
          fill(255, 255, 0);
+         noStroke();
+         ellipse(380, 93, 200, 200);
         
     }
-    noStroke();
-    ellipse(380, 93, 200, 200);
+    
 };
 
-Udraw(146);
+Udraw(270);
 
 
 //roof
 fill(174, 180, 214);
 triangle(200, 28, 350, 150, 50, 150);
 
-//man design
+//main design
 fill(255, 255, 255);
 rect(60, 150, 280, 207);
 
@@ -54,8 +60,10 @@ var Wdraw = function (x, y) {
 
 for (var i = 1; i < 4; i ++) {
     Wdraw(i * 90 - 9, 164);
+    line(i * 90 + 20, 165, i * 90 + 20 , 221);
     for (var l = 2; l < 8; l++) {
         Wdraw(l * 182 -283, 249);
+        line(l * 181 - 251, 308, l * 181 - 251, 249);
     }
 }
 //door
@@ -74,17 +82,18 @@ var Pdraw = function(X) {
         ellipse(207, 318, 15, 15);
     }
 };
-Pdraw(195); 
+Pdraw(183); 
 
 //grass and trees
 for (var n = 1; n < 10; n += 1) {
-    image(getImage("cute/GrassBlock"),  n * 48 - 53, 328, 50, 70);
+    image(getImage("cute/GrassBlock"),  n * 48 - 53, 335, 50, 70);
     if (n === 2 || n === 3 || n === 6 || n === 7) {
-        image(getImage("cute/TreeShort"),  n * 50 - 53, 302, 55, 56);
+        image(getImage("cute/TreeShort"),  n * 50 - 53, 310, 55, 56);
     }
     
     else if (n === 1 || n === 8) {
-        image(getImage("cute/TreeTall"),  n * 50 - 53, 221, 54, 140);
+        fill(255, 0, 0);
+        image(getImage("cute/TreeTall"),  n * 50 - 53, 234, 54, 140);
     }
 }
     

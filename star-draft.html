@@ -1,0 +1,45 @@
+background(29, 40, 115);
+
+var grass = getImage("cute/GrassBlock");
+var tree = getImage("cute/TreeUgly");
+
+var x = 0;
+while (x < 400) {
+    image(grass, x, 270);
+    image(tree, x, 200);
+    x += 100;
+}
+
+var Bdraw = function () {
+    fill(29, 40, 115);
+    noStroke();
+    rect(0, 0, 400, 150);
+    var k = 0;
+    var n = 0;
+    while (k < 304) {
+        image(getImage("space/star"), k * 6 + -16, n + 5, 50, 50);
+        k += 5;
+        if (k === 304) {
+            n += 24;
+            k = 0;
+            while (k < 304) {
+                image(getImage("space/star"), k * 6 + -16, n + 5, 50, 50);
+            }
+        }
+    }
+};
+var xPos = 5;
+var yPos = 136;
+
+draw = function() {
+    Bdraw();
+    noStroke();
+    fill(255, 242, 0);
+    ellipse(xPos, yPos, 10, 10);
+    xPos += 10;
+    yPos -= 1;
+};
+
+
+    
+// fill(29, 40, 115);    rect(0, 0, 400, 200);    image(getImage("space/star"), 4, 1, 50, 50);

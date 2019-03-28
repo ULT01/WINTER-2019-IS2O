@@ -88,11 +88,20 @@ shelf();
 var W = 93;
 var H = 100;
 
+var rec = 3;
+
 var by = "By: ";
 var first = function(z) {
     for (var i = 0; i < bookO.length; i++) {  
     // draw one book
         fill(bookO[i].colors);
+        if (i===rec) {
+            strokeWeight(2);
+            stroke(219, 137, 13);
+        } else {
+            strokeWeight(2);
+            stroke(0, 0, 0);
+        }
         rect(i * 99 + 1, z, W, H);
         fill(0, 0, 0);
         text(bookO[i].title, i * 98 + 22, z + 9, 70, 100);
@@ -106,6 +115,13 @@ var secon = function(y) {
     for (var t = 0; t < bookTW.length; t++) {  
     // draw one book
         fill(bookTW[t].colors);
+        if (t===rec) {
+            strokeWeight(3);
+            stroke(219, 137, 13);
+        } else {
+            strokeWeight(2);
+            stroke(0, 0, 0);
+        }
         rect(t * 99 + 1, y, W, H);
         fill(0, 0, 0);
         text(bookTW[t].title, t * 98 + 22, y + 9, 70, 100);
@@ -119,6 +135,13 @@ var third = function(w) {
     for (var p = 0; p < bookTH.length; p++) {  
     // draw one book
         fill(bookTH[p].colors);
+        if (p===rec) {
+            strokeWeight(3);
+            stroke(219, 137, 13);
+        } else {
+            strokeWeight(2);
+            stroke(0, 0, 0);
+        }
         rect(p * 99 + 1, w, W, H);
         fill(0, 0, 0);
         text(bookTH[p].title, p * 98 + 22, w + 9, 70, 100);
@@ -182,4 +205,3 @@ Fstar(2);
 Fstar(3);
 
     
-

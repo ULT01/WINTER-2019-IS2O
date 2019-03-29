@@ -23,7 +23,7 @@ var Udraw = function (A) {
     
 };
 
-Udraw(270);
+Udraw(134);
 
 
 //roof

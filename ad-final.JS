@@ -11,7 +11,7 @@ textSize(30);
 text("Dairy Milk!", 254, 339);
 
 textSize(23);
-text("Ice Cream!", 278, 387);
+text("Melt with Joy!", 261, 387);
 // ice creams
 
 var ICdraw = function (x, y, z, Z) {
@@ -52,7 +52,7 @@ draw = function() {
     rect(0, 0, 400, 113);
     fill(255, 255, 255);
     textSize(30);
-    text("MELT with JOY!", 102, 30);
+    text("Ice Cream!", 141, 30);
     
     
     if (x > 100) {
@@ -76,8 +76,6 @@ draw = function() {
     image(getImage("avatars/mr-pink-green"), x, 40, 80, 68);
     x += 1;
 };
-
-
 
 
 

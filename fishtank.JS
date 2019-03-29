@@ -1,14 +1,12 @@
 background(89, 216, 255);
 
-var rdraw = function (y) {
-    for (var z = 0; z < 405; z += 40) {
+var rdraw = function(y) {
+    for (var z = 0; z < 392; z += 35) {
         image(getImage("cute/Rock"), z - 10, y, 50, 50);
     }
 };
 rdraw(354);
 rdraw(367);
-rdraw(368);
-
 
 
 var centerX = 200;
@@ -37,10 +35,9 @@ var Fdraw = function(centerX, centerY, bodyLength, bodyHeight, bodyColor, t) {
 
 };
 
-draw = function() {
-    if (mouseIsPressed) {
-        Fdraw(mouseX, mouseY, -81, 69, color(234, 239, 242), 9);
-    }
+mouseClicked = function() {
+    // var rand = floor(random(0, 400));
+    Fdraw(mouseX, mouseY, 109, 65, color(255, 0, 0), 5);
 };
 
 Fdraw(132, 72, 156, 112, color(179, 124, 124), 15);
@@ -49,7 +46,3 @@ rotate(20);
 Fdraw(188, 238, 109, 65, color(147, 156, 22), 10);
 rotate(-36);
 Fdraw(253, 183, -109, 65, color(156, 25, 25), 5);
-
-
-
-         

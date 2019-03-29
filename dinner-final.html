@@ -6,14 +6,14 @@ ellipse(200, 200, 300, 300);
 
 //Chips
 var drawChip = function() {
-    var i = 148;
-    var y = 311;
+    var i = 248;
+    var y = 350;
     noStroke();
     fill(209, 128, 23);
-    while (i < 400 && y < 400) {
+    while (i < 358 && y < 420) {
         triangle(i - 38, y - 136, i + -4, y -122, i -85, y - 62);
-        i += 80;
-        y += 43;
+        i += 28;
+        y += 31;
     }
 };
 
@@ -30,20 +30,54 @@ var drawD = function(w, x) {
     ellipse(w, x, 40, 40);
 };
 
-drawD(214, 171);
+drawD(235, 171);
 
-//Cake
-noStroke();
-fill(181, 134, 23);
-rect(131, 293, 84, 39);
-fill(255, 255, 255);
-rect(137, 298, 74, 29);
-fill(255, 0, 0);
-ellipse(174, 311, 23, 23);
+//Pizza Slice
+
+var PSdraw = function (j, k, l, m, n, o, J, K, L, M, Q, R, S, T, U, V, C, D, E, F, G, H) {
+    noStroke();
+    fill(227, 139, 16);
+    triangle(j, k, l, m, n, o);
+    fill(212, 171, 68);
+    triangle(J, K, L, M, n, o);
+    fill(255, 0, 0);
+    ellipse(Q, R, 13, 13);
+    ellipse(S, T, 13, 13);
+    ellipse(U, V, 13, 13);
+    ellipse(C, D, 13, 13);
+    ellipse(E, F, 13, 13);
+    ellipse(G, H, 13, 13);
+    
+};
+
+PSdraw(124, 300, 185, 226, 63, 189, 117, 288, 172, 222, 91, 211, 107, 239, 135, 247, 121, 220, 154, 228, 119, 268);
+
 
 //French Fries
-fill(255, 213, 0);
-quad(200, 76, 200, 108, 300, 134, 300, 108 );
-quad(124, 154, 120, 92, 145, 67, 153, 132 );
-quad(285, 233, 288, 161, 329, 154, 310, 240 );
+var Fdraw = function (a, b, c, d, e, f, g, h) {
+    stroke(214, 207, 0);
+    strokeWeight(3);
+    fill(252, 210, 0);
+    quad( a, 200- b, c, 200 - d, e, 200 - f, g, 200 -  h);
+};
+
+Fdraw(218, 109, 175, 59, 164, 77, 216, 133); //top
+Fdraw(97, 46, 100, 108, 116, 103, 115, 29); //left
+Fdraw(151, 9, 136, 81, 148, 103, 167, 15);  //midle
+
+//Banana
+
+stroke(0, 0, 0);
+strokeWeight(1);
+rotate(-24);
+translate(56, 68);
+fill(250, 250, 50);
+beginShape();
+vertex(133,123);
+bezierVertex(240,166,161,286,84,292);
+bezierVertex(110,252,188,201,133,123);
+endShape();
+
+
+
 

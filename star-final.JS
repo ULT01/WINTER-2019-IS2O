@@ -35,6 +35,7 @@ var kPos = 405;
 var speed = 15;
 var speed2 = 15;
 
+
 var draw = function() {
     Bdraw();
     if (xPos > 400) {
